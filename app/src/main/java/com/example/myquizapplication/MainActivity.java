@@ -40,6 +40,18 @@ public class MainActivity extends AppCompatActivity {
 
         tv = findViewById(R.id.question);
 
+        String [] answers = {"false","false","false","false","false","false","false","false","false","false"};
+        String[] questions ={"What is 2 * 3 ?","What is 5 + 7 ?","What is 12 - 5 ?","What is 18 / 2 ?","What is 2 ^ 3 ?","what log2(32) ?"
+        ,"What is value of x when 2x + 3x = 35 ?"};
+        int [] ans_0 = {4,5,6,10};
+        int [] ans_1 = {5,7,10,12};
+        int [] ans_2 = {5,7,10,12};
+        int [] ans_3 = {6,9,12,15};
+        int [] ans_4 = {2,3,5,8};
+        int [] ans_5 = {2,5,8,32};
+        int [] ans_6 = {5,6,7,8};
+
+
 
 
 //        Button btn_question;
