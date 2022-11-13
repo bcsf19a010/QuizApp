@@ -21,6 +21,7 @@ import com.example.myquizapplication.databinding.ActivityMainBinding;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button optA,optB,optC,optD;
+        TextView tv;
+
+        optA = findViewById(R.id.option_a);
+        optB = findViewById(R.id.option_b);
+        optC = findViewById(R.id.option_c);
+        optD = findViewById(R.id.option_d);
+
+        tv = findViewById(R.id.question);
+
+
 
 //        Button btn_question;
 //        btn_question = findViewById(R.id.startQuestion);

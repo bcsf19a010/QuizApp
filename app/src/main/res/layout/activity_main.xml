@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/option_a" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/option_d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
