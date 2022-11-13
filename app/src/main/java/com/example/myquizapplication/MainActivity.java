@@ -23,6 +23,8 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,18 +42,27 @@ public class MainActivity extends AppCompatActivity {
 
         tv = findViewById(R.id.question);
 
-        String [] answers = {"false","false","false","false","false","false","false","false","false","false"};
+        int rightAnswer = 0;
+        int wrongAnswer = 10;
+
+        String [] doneOrNot = {"false","false","false","false","false","false","false","false","false","false"};
         String[] questions ={"What is 2 * 3 ?","What is 5 + 7 ?","What is 12 - 5 ?","What is 18 / 2 ?","What is 2 ^ 3 ?","what log2(32) ?"
-        ,"What is value of x when 2x + 3x = 35 ?"};
-        int [] ans_0 = {4,5,6,10};
-        int [] ans_1 = {5,7,10,12};
-        int [] ans_2 = {5,7,10,12};
-        int [] ans_3 = {6,9,12,15};
-        int [] ans_4 = {2,3,5,8};
-        int [] ans_5 = {2,5,8,32};
-        int [] ans_6 = {5,6,7,8};
+        ,"What is value of x when 2x + 3x = 35 ?","What is sqrt(81) ?","What is cube of 4 ?","What is 2 + 2 * 3 ?"};
+        int [][] answers={{4,5,6,10},{5,7,10,12},{5,7,10,12},{6,9,12,15},{2,3,5,8},{2,5,8,32},{5,6,7,8},{7,8,9,10},{12,16,32,64},{4,8,12,16}};
+//        int [] ans_0 = {4,5,6,10};
+//        int [] ans_1 = {5,7,10,12};
+//        int [] ans_2 = {5,7,10,12};
+//        int [] ans_3 = {6,9,12,15};
+//        int [] ans_4 = {2,3,5,8};
+//        int [] ans_5 = {2,5,8,32};
+//        int [] ans_6 = {5,6,7,8};
+//        int [] ans_7 = {7,8,9,10};
+//        int [] ans_8 ={12,16,32,64};
+//        int [] ans_9 = {4,8,12,16};
 
+        int [] correct_ans ={6,12,7,9,8,5,7,9,64,8};
 
+        
 
 
 //        Button btn_question;
