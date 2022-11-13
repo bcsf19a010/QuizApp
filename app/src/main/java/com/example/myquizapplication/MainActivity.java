@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         int rightAnswer = 0;
         int wrongAnswer = 10;
 
-        String [] doneOrNot = {"false","false","false","false","false","false","false","false","false","false"};
+        //String [] doneOrNot = {"false","false","false","false","false","false","false","false","false","false"};
         String[] questions ={"What is 2 * 3 ?","What is 5 + 7 ?","What is 12 - 5 ?","What is 18 / 2 ?","What is 2 ^ 3 ?","what log2(32) ?"
         ,"What is value of x when 2x + 3x = 35 ?","What is sqrt(81) ?","What is cube of 4 ?","What is 2 + 2 * 3 ?"};
         int [][] answers={{4,5,6,10},{5,7,10,12},{5,7,10,12},{6,9,12,15},{2,3,5,8},{2,5,8,32},{5,6,7,8},{7,8,9,10},{12,16,32,64},{4,8,12,16}};
@@ -61,8 +61,33 @@ public class MainActivity extends AppCompatActivity {
 //        int [] ans_9 = {4,8,12,16};
 
         int [] correct_ans ={6,12,7,9,8,5,7,9,64,8};
+        int [] user_ans=new int[10];
 
-        
+//        for(int i=0;i<10;i++)
+//        {
+            int random = new Random().nextInt(10);
+//            while(doneOrNot[random] != "false")
+//            {
+//                random = new Random().nextInt(10);
+//            }
+            //doneOrNot[random]= "true";
+            tv.setText(questions[random]);
+
+            int r = new Random().nextInt(4);
+            optA.setText(String.valueOf(answers[random][r]));
+
+            r = (r+1)%4;
+
+            optB.setText(String.valueOf(answers[random][r]));
+            r = (r+1)%4;
+
+            optC.setText(String.valueOf(answers[random][r]));
+            r = (r+1)%4;
+
+            optD.setText(String.valueOf(answers[random][r]));
+
+
+        //}
 
 
 //        Button btn_question;
